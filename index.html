@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Infinite Horizontal Carousel</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <title>Infinite Horizontal Carousel</title>
+        <style>
         * {
             margin: 0;
             padding: 0;
@@ -127,159 +129,223 @@
             color: white;
         }
 
-        @media (max-width: 768px) {
-   
-    .card-container,
-    .card-container.active {
-        flex: 0 0 90%; 
-        opacity: 1; 
-    }
+       @media (max-width: 768px) {
+
+.card-container,
+ .card-container.active {
+ flex: 0 0 90%;
+opacity: 1;
+ }
 
 
-    .item,
-    .card-container.active .item {
-        height: auto;
-        aspect-ratio: 16 / 10; 
-    }
+.item,
+.card-container.active .item {
+ height: auto;
+aspect-ratio: 16 / 10;
+ }
 
+            /* --- ส่วนที่เพิ่มเข้ามาใหม่ --- */
+            .item-desc {
+                padding: 15px 0;
+                /* ป้องกันคำยาวๆ ล้นจอ */
+                word-break: break-word;
+                overflow-wrap: break-word;
+            }
+.item-desc h3 {
+font-size: 20px; /* ลดขนาดจาก 25px */
+ }
+
+ .item-desc p {
+ font-size: 16px; /* ลดขนาดจาก 18px */
+ }
+            /* --- สิ้นสุดส่วนที่เพิ่ม --- */
 
 }
     </style>
-</head>
-<body>
+    </head>
+    <body>
 
-<div class="items-wrapper">
-    <div class="card-list">
-        <div class="card-container">
-            <div class="item" style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-57-1.png);"></div>
-            <div class="item-desc"><h3>ก่อนปี พ.ศ. 2500 – 2530</h3><p style="font-weight: 700;">การสร้างบ้านในไทยนิยมใช้ไม้เป็นวัสดุหลัก</p><p>เนื่องจากป่าไม้มีความอุดมสมบูรณ์และราคาถูก บ้านไม้ต้องใช้ช่างไม้ฝีมือดีที่สืบทอดความชำนาญรุ่นต่อรุ่น เมื่อป่าไม้ลดลง วัสดุประเภทอิฐและคอนกรีตเสริมเหล็กได้รับความนิยมมากขึ้น การสร้างบ้านเริ่มต้องอาศัยวิศวกรและสถาปนิกอย่างเป็นระบบ การก่อสร้างเริ่มเน้นมาตรฐานและความแข็งแรง</p></div>
+        <div class="items-wrapper">
+            <div class="card-list">
+                <div class="card-container">
+                    <div class="item"
+                        style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-57-1.png);"></div>
+                    <div class="item-desc"><h3>ก่อนปี พ.ศ. 2500 – 2530</h3><p
+                            style="font-weight: 700;">การสร้างบ้านในไทยนิยมใช้ไม้เป็นวัสดุหลัก</p><p>เนื่องจากป่าไม้มีความอุดมสมบูรณ์และราคาถูก
+                            บ้านไม้ต้องใช้ช่างไม้ฝีมือดีที่สืบทอดความชำนาญรุ่นต่อรุ่น
+                            เมื่อป่าไม้ลดลง
+                            วัสดุประเภทอิฐและคอนกรีตเสริมเหล็กได้รับความนิยมมากขึ้น
+                            การสร้างบ้านเริ่มต้องอาศัยวิศวกรและสถาปนิกอย่างเป็นระบบ
+                            การก่อสร้างเริ่มเน้นมาตรฐานและความแข็งแรง</p></div>
+                </div>
+                <div class="card-container">
+                    <div class="item"
+                        style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-58-1.png);"></div>
+                    <div class="item-desc"><h3>พ.ศ. 2530 – 2537</h3><p
+                            style="font-weight: 700;">ธุรกิจรับสร้างบ้านเริ่มต้นในไทย</p><p>บริษัท
+                            ซีคอน จำกัด
+                            เป็นผู้ริเริ่มธุรกิจรับสร้างบ้านรายแรกจนเป็นที่รู้จักของผู้บริโภค
+                            และในเวลาต่อมาได้มีผู้ประกอบการรายใหม่เข้าสู่ตลาดอย่างต่อเนื่อง
+                            อาทิ บริษัท โฟร์พัฒนา จำกัด, บริษัท รอยัลเฮ้าส์
+                            จำกัด, บริษัท แลนดี้ โฮม (ประเทศไทย) จำกัด
+                            เป็นต้น</p></div>
+                </div>
+                <div class="card-container">
+                    <div class="item"
+                        style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-59-1.png);"></div>
+                    <div class="item-desc"><h3>พ.ศ. 2540</h3><p
+                            style="font-weight: 700;">วิกฤตเศรษฐกิจส่งผลกระทบอย่างรุนแรง</p><p>หลายบริษัทต้องเลิกกิจการและหายไปจากธุรกิจรับสร้างบ้านมากกว่า
+                            100 ราย
+                            เหลือเพียงบริษัทที่สามารถยืนหยัดอยู่ได้ประมาณ 30
+                            กว่าบริษัทอย่างไรก็ดี
+                            วิกฤตในครั้งนั้นส่วนหนึ่งก็ส่งผลดี
+                            สำหรับผู้ประกอบการที่ยังคงสามารถต่อสู้ยืนหยัดกับสภาพเศรษฐกิจอยู่ได้
+                            และแปรมาเป็น “โอกาส” ในเวลาต่อมา
+                            ด้วยการสร้างชื่อเสียง
+                            สร้างความเชื่อมั่นขององค์กรและธุรกิจรับสร้างบ้านจนเป็นที่ยอมรับของผู้บริโภค</p></div>
+                </div>
+                <div class="card-container">
+                    <div class="item"
+                        style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-60-1.png);"></div>
+                    <div class="item-desc"><h3>พ.ศ. 2545 – 2547</h3><p
+                            style="font-weight: 700;">เศรษฐกิจเริ่มฟื้นตัว
+                            ธุรกิจรับสร้างบ้านกลับมาคึกคักอีกครั้ง</p><p>มีผู้ประกอบการใหม่เข้ามากว่า
+                            150 ราย การแข่งขันในตลาดเพิ่มสูงขึ้น
+                            แต่ผู้ประกอบการบางรายขาดคุณสมบัติด้านวิศวกรและสถาปัตยกรรม
+                            ส่งผลเสียต่อภาพรวมของธุรกิจ</p></div>
+                </div>
+                <div class="card-container">
+                    <div class="item"
+                        style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-61-1.png);"></div>
+                    <div class="item-desc"><h3>พ.ศ. 2547</h3><p
+                            style="font-weight: 700;">จากบทเรียนวิกฤตเศรษฐกิจ
+                            กลุ่มผู้ประกอบการรับสร้างบ้านชั้นนำ</p><p>ได้ร่วมมือกันจัดตั้ง
+                            สมาคมธุรกิจรับสร้างบ้าน (Home Builder Association)
+                            เพื่อพัฒนามาตรฐานของธุรกิจ สร้างความน่าเชื่อถือ
+                            วางเป้าหมายในการขยายธุรกิจทั่วประเทศ
+                            พร้อมหาพันธมิตรในการสร้างการเติบโตของภาพรวมธุรกิจรับสร้างบ้านให้ขยายออกไปในวงกว้างหรือทั่วประเทศ</p></div>
+                </div>
+            </div>
         </div>
-        <div class="card-container">
-            <div class="item" style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-58-1.png);"></div>
-            <div class="item-desc"><h3>พ.ศ. 2530 – 2537</h3><p style="font-weight: 700;">ธุรกิจรับสร้างบ้านเริ่มต้นในไทย</p><p>บริษัท ซีคอน จำกัด เป็นผู้ริเริ่มธุรกิจรับสร้างบ้านรายแรกจนเป็นที่รู้จักของผู้บริโภค และในเวลาต่อมาได้มีผู้ประกอบการรายใหม่เข้าสู่ตลาดอย่างต่อเนื่อง อาทิ บริษัท โฟร์พัฒนา จำกัด, บริษัท รอยัลเฮ้าส์ จำกัด, บริษัท แลนดี้ โฮม (ประเทศไทย) จำกัด เป็นต้น</p></div>
+
+        <div class="nav-buttons">
+            <button id="prevBtn">ก่อนหน้า</button>
+            <button id="nextBtn">ถัดไป</button>
         </div>
-        <div class="card-container">
-            <div class="item" style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-59-1.png);"></div>
-            <div class="item-desc"><h3>พ.ศ. 2540</h3><p style="font-weight: 700;">วิกฤตเศรษฐกิจส่งผลกระทบอย่างรุนแรง</p><p>หลายบริษัทต้องเลิกกิจการและหายไปจากธุรกิจรับสร้างบ้านมากกว่า 100 ราย เหลือเพียงบริษัทที่สามารถยืนหยัดอยู่ได้ประมาณ 30 กว่าบริษัทอย่างไรก็ดี วิกฤตในครั้งนั้นส่วนหนึ่งก็ส่งผลดี สำหรับผู้ประกอบการที่ยังคงสามารถต่อสู้ยืนหยัดกับสภาพเศรษฐกิจอยู่ได้ และแปรมาเป็น “โอกาส” ในเวลาต่อมา ด้วยการสร้างชื่อเสียง สร้างความเชื่อมั่นขององค์กรและธุรกิจรับสร้างบ้านจนเป็นที่ยอมรับของผู้บริโภค</p></div>
-        </div>
-        <div class="card-container">
-            <div class="item" style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-60-1.png);"></div>
-            <div class="item-desc"><h3>พ.ศ. 2545 – 2547</h3><p style="font-weight: 700;">เศรษฐกิจเริ่มฟื้นตัว ธุรกิจรับสร้างบ้านกลับมาคึกคักอีกครั้ง</p><p>มีผู้ประกอบการใหม่เข้ามากว่า 150 ราย การแข่งขันในตลาดเพิ่มสูงขึ้น แต่ผู้ประกอบการบางรายขาดคุณสมบัติด้านวิศวกรและสถาปัตยกรรม ส่งผลเสียต่อภาพรวมของธุรกิจ</p></div>
-        </div>
-        <div class="card-container">
-            <div class="item" style="background-image: url(https://hba-th.org//wp-content/uploads/2025/04/Frame-61-1.png);"></div>
-            <div class="item-desc"><h3>พ.ศ. 2547</h3><p style="font-weight: 700;">จากบทเรียนวิกฤตเศรษฐกิจ กลุ่มผู้ประกอบการรับสร้างบ้านชั้นนำ</p><p>ได้ร่วมมือกันจัดตั้ง สมาคมธุรกิจรับสร้างบ้าน (Home Builder Association) เพื่อพัฒนามาตรฐานของธุรกิจ สร้างความน่าเชื่อถือ วางเป้าหมายในการขยายธุรกิจทั่วประเทศ พร้อมหาพันธมิตรในการสร้างการเติบโตของภาพรวมธุรกิจรับสร้างบ้านให้ขยายออกไปในวงกว้างหรือทั่วประเทศ</p></div>
-        </div>
-    </div>
-</div>
 
-<div class="nav-buttons">
-    <button id="prevBtn">ก่อนหน้า</button>
-    <button id="nextBtn">ถัดไป</button>
-</div>
+        <script>
+ const wrapper = document.querySelector('.items-wrapper');
+ const cardList = document.querySelector('.card-list');
+ const prevBtn = document.getElementById('prevBtn');
+ const nextBtn = document.getElementById('nextBtn');
 
+ const originalCards = Array.from(cardList.children);
+ const originalCardCount = originalCards.length;
+ let autoSlideInterval;
+ let isTransitioning = false;
 
-<script>
-    const wrapper = document.querySelector('.items-wrapper');
-    const cardList = document.querySelector('.card-list');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    
-    const originalCards = Array.from(cardList.children);
-    const originalCardCount = originalCards.length;
-    let autoSlideInterval;
-    let isTransitioning = false;
+ const cloneCount = originalCardCount;
 
-    const cloneCount = originalCardCount;
+ originalCards.slice(0, cloneCount).forEach(card => {
+ cardList.appendChild(card.cloneNode(true));
+ });
+ originalCards.slice(-cloneCount).reverse().forEach(card => {
+ cardList.prepend(card.cloneNode(true));
+ });
 
-    originalCards.slice(0, cloneCount).forEach(card => {
-        cardList.appendChild(card.cloneNode(true));
-    });
-    originalCards.slice(-cloneCount).reverse().forEach(card => {
-        cardList.prepend(card.cloneNode(true));
-    });
-
-    const allCards = Array.from(cardList.children);
-    let currentIndex = cloneCount;
-    
-
-    const inactiveCardWidth = 300;
-    const activeCardWidth = 500;
-  
-    const cardMargin = parseInt(window.getComputedStyle(allCards[0]).marginRight) * 2;
+ const allCards = Array.from(cardList.children);
+ let currentIndex = cloneCount;
 
 
-    function updateSlider(newIndex, instant = false) {
-        currentIndex = newIndex;
-        isTransitioning = !instant;
-        cardList.style.transition = instant ? 'none' : 'transform 0.5s ease';
-        
-     
-        
-        const spacePerInactiveCard = inactiveCardWidth + cardMargin;
-        
-      
-        let precedingSpace = currentIndex * spacePerInactiveCard;
+ const cardMargin = parseInt(window.getComputedStyle(allCards[0]).marginRight) * 2;
 
-      
-        const targetCardCenter = precedingSpace + (activeCardWidth / 2);
-        
+
+    // --- นี่คือฟังก์ชันที่แก้ไขใหม่ ---
+ function updateSlider(newIndex, instant = false) {
+ currentIndex = newIndex;
+ isTransitioning = !instant;
+ cardList.style.transition = instant ? 'none' : 'transform 0.5s ease';
+
+
+        let currentInactiveCardWidth;
+        let currentActiveCardWidth;
+        const currentCardMargin = parseInt(window.getComputedStyle(allCards[0]).marginRight) * 2;
         const viewportCenter = wrapper.offsetWidth / 2;
+
+        if (window.innerWidth <= 768) {
+            
+            currentInactiveCardWidth = allCards[0].offsetWidth;
+            currentActiveCardWidth = allCards[0].offsetWidth;
+        } else {
+          
+            currentInactiveCardWidth = 300;
+            currentActiveCardWidth = 500;
+        }
+      
+        const spacePerInactiveCard = currentInactiveCardWidth + currentCardMargin;
+        let precedingSpace = currentIndex * spacePerInactiveCard;
+        
+        const targetCardCenter = precedingSpace + (currentActiveCardWidth / 2);
+        
         const offset = viewportCenter - targetCardCenter;
         cardList.style.transform = `translateX(${offset}px)`;
 
-      
-        allCards.forEach((card, index) => {
-            if (index === currentIndex) {
-                card.classList.add('active');
-            } else {
-                card.classList.remove('active');
-            }
-        });
+ allCards.forEach((card, index) => {
+if (index === currentIndex) {
+ card.classList.add('active');
+ } else {
+card.classList.remove('active');
+}
+ });
 
-        if (!instant) {
-            cardList.addEventListener('transitionend', onTransitionEnd, { once: true });
-        }
-    }
-    
-    function onTransitionEnd() {
-        isTransitioning = false;
-        if (currentIndex >= cloneCount + originalCardCount) {
-            currentIndex -= originalCardCount;
-            updateSlider(currentIndex, true);
-        }
-        if (currentIndex < cloneCount) {
-            currentIndex += originalCardCount;
-            updateSlider(currentIndex, true);
-        }
-    }
-    
-    function moveNext() {
-        if (isTransitioning) return;
-        currentIndex++;
-        updateSlider(currentIndex);
-    }
+ if (!instant) {
+ cardList.addEventListener('transitionend', onTransitionEnd, { once: true });
+ }
+ }
 
-    function movePrev() {
-        if (isTransitioning) return;
-        currentIndex--;
-        updateSlider(currentIndex);
-    }
+ function onTransitionEnd() {
+ isTransitioning = false;
+ if (currentIndex >= cloneCount + originalCardCount) {
+ currentIndex -= originalCardCount;
+updateSlider(currentIndex, true);
+}
+ if (currentIndex < cloneCount) {
+ currentIndex += originalCardCount;
+ updateSlider(currentIndex, true);
+ }
+}
 
-    function startAutoSlide() {
-        clearInterval(autoSlideInterval);
-        autoSlideInterval = setInterval(moveNext, 180000);
-    }
-    
-    nextBtn.addEventListener('click', () => { moveNext(); startAutoSlide(); });
-    prevBtn.addEventListener('click', () => { movePrev(); startAutoSlide(); });
+ function moveNext() {
+ if (isTransitioning) return;
+ currentIndex++;
+ updateSlider(currentIndex);
+ }
 
-    window.addEventListener('load', () => {
-        updateSlider(currentIndex, true);
-        startAutoSlide();
+ function movePrev() {
+ if (isTransitioning) return;
+ currentIndex--;
+ updateSlider(currentIndex);
+}
+
+ function startAutoSlide() {
+ clearInterval(autoSlideInterval);
+autoSlideInterval = setInterval(moveNext, 180000); // 180000 คือ 3 นาที
+ }
+
+ nextBtn.addEventListener('click', () => { moveNext(); startAutoSlide(); });
+prevBtn.addEventListener('click', () => { movePrev(); startAutoSlide(); });
+
+ window.addEventListener('load', () => {
+ updateSlider(currentIndex, true);
+ startAutoSlide();
+});
+
+
+    window.addEventListener('resize', () => {
+        updateSlider(currentIndex, true); 
     });
 
 </script>
 
-</body>
+    </body>
 </html>
